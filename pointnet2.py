@@ -107,6 +107,6 @@ if __name__ == "__main__":
     optimizer = torch.optim.Adam(model.parameters(), lr=0.001)
 
     for epoch in range(1, 201):
-    train(epoch, optimizer)
-    test_acc = test(test_loader)
-    print('Epoch: {:03d}, Test: {:.4f}'.format(epoch, test_acc))
+      train(epoch, optimizer)
+      test_acc = test(test_loader)
+      print('Epoch: {:03d}, Test: {:.4f}'.format(epoch, test_acc))
