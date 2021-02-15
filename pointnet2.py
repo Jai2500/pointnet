@@ -99,7 +99,7 @@ if __name__ == "__main__":
     test_dataset = torch_geometric.datasets.ModelNet(path, '10', False, pre_transform, transform)
 
     train_loader = torch_geometric.data.DataLoader(train_dataset, batch_size=32, shuffle=True)
-    train_loader = torch_geometric.data.DataLoader(test_dataset, batch_size=32, shuffle=False)
+    test_loader = torch_geometric.data.DataLoader(test_dataset, batch_size=32, shuffle=False)
 
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
